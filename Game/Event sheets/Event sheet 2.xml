@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
     <events>
+        <variable constant="0" name="GrassScrollSpeed" sid="282894690459535" static="0" type="number">400</variable>
         <variable constant="0" name="AddedLevel" sid="487823970444512" static="0" type="number">0</variable>
         <variable constant="0" name="RemainderOfPoints" sid="171939627103957" static="0" type="number">0</variable>
         <variable constant="0" name="ItemThreeProbability" sid="8952333892280808" static="0" type="number">60</variable>
@@ -19,7 +20,7 @@
         <variable comment="X position of lane two" constant="0" name="SpawnPositionTwo" sid="523704808627034" static="0" type="number">472.5</variable>
         <variable comment="X position of lane three" constant="0" name="SpawnPositionThree" sid="1979173363396324" static="0" type="number">607.5</variable>
         <variable comment="X position of lane four" constant="0" name="SpawnPositionFour" sid="648287819242409" static="0" type="number">742.5</variable>
-        <variable comment="Initial Speed of objects" constant="1" name="INITIALSCROLLSPEED" sid="2496140860591757" static="0" type="number">300</variable>
+        <variable comment="Initial Speed of objects" constant="0" name="INITIALSCROLLSPEED" sid="2496140860591757" static="0" type="number">300</variable>
         <variable comment="used with dt calculations" constant="0" name="ScrollSpeed" sid="3346858870236385" static="0" type="number">0</variable>
         <variable comment="Is game muted" constant="0" name="Sound" sid="9646389759131214" static="0" type="number">0</variable>
         <variable comment="Is game in paused state" constant="0" name="Paused" sid="1770628910327837" static="0" type="number">0</variable>
@@ -65,8 +66,16 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="4946185423393098" type="System">
+                        <action id="-9" name="Set value" sid="621105186960721" type="System">
+                            <param id="0" name="Variable">INITIALSCROLLSPEED</param>
+                            <param id="1" name="Value">ScrollSpeed</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="864239089954388" type="System">
                             <param id="0" name="Variable">ScrollSpeed</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4946185423393098" type="System">
+                            <param id="0" name="Variable">GrassScrollSpeed</param>
                             <param id="1" name="Value">0</param>
                         </action>
                         <action behavior="8Direction" id="8" name="Set enabled" sid="8294981394105262" type="Player">
@@ -101,6 +110,10 @@
                         <action id="-9" name="Set value" sid="7092732182805504" type="System">
                             <param id="0" name="Variable">ScrollSpeed</param>
                             <param id="1" name="Value">INITIALSCROLLSPEED</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="599401955287932" type="System">
+                            <param id="0" name="Variable">GrassScrollSpeed</param>
+                            <param id="1" name="Value">INITIALSCROLLSPEED+100</param>
                         </action>
                         <action behavior="8Direction" id="8" name="Set enabled" sid="7854921925725495" type="Player">
                             <param id="0" name="State">1</param>
@@ -183,10 +196,10 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="3338759688368437" type="GrassLeft">
-                            <param id="0" name="Y">GrassLeft.Y+(dt*(ScrollSpeed+100))</param>
+                            <param id="0" name="Y">GrassLeft.Y+(dt*GrassScrollSpeed)</param>
                         </action>
                         <action id="-2" name="Set Y" sid="8746695630239541" type="GrassRight">
-                            <param id="0" name="Y">GrassRight.Y+(dt*(ScrollSpeed+100))</param>
+                            <param id="0" name="Y">GrassRight.Y+(dt*GrassScrollSpeed)</param>
                         </action>
                         <action id="-2" name="Set Y" sid="4087554764710221" type="Can">
                             <param id="0" name="Y">Can.Y+(dt*ScrollSpeed)</param>
@@ -723,12 +736,20 @@
                             <param id="0" name="Variable">ScrollSpeed</param>
                             <param id="1" name="Value">ScrollSpeed/2</param>
                         </action>
+                        <action id="-9" name="Set value" sid="370411006694816" type="System">
+                            <param id="0" name="Variable">ScrollSpeed</param>
+                            <param id="1" name="Value">GrassScrollSpeed/2</param>
+                        </action>
                         <action id="-16" name="Wait" sid="317625490091348" type="System">
                             <param id="0" name="Seconds">5</param>
                         </action>
                         <action id="-9" name="Set value" sid="273879148693511" type="System">
                             <param id="0" name="Variable">ScrollSpeed</param>
                             <param id="1" name="Value">ScrollSpeed*2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="368187311360435" type="System">
+                            <param id="0" name="Variable">ScrollSpeed</param>
+                            <param id="1" name="Value">GrassScrollSpeed*2</param>
                         </action>
                     </actions>
                 </event-block>
@@ -780,7 +801,11 @@
                 </action>
                 <action id="-9" name="Set value" sid="806174168925095" type="System">
                     <param id="0" name="Variable">ScrollSpeed</param>
-                    <param id="1" name="Value">ScrollSpeed+100</param>
+                    <param id="1" name="Value">ScrollSpeed+50</param>
+                </action>
+                <action id="-9" name="Set value" sid="896127903009174" type="System">
+                    <param id="0" name="Variable">GrassScrollSpeed</param>
+                    <param id="1" name="Value">GrassScrollSpeed+50</param>
                 </action>
             </actions>
         </event-block>
