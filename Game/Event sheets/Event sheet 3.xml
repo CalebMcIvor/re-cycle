@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <variable comment="Frame of Introduction Slide" constant="0" name="IntroFrame" sid="5134957030626432" static="0" type="number">0</variable>
+        <event-block sid="8765830369824332">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8051107563339269" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1572366350785588" type="System">
+                    <param id="0" name="Variable">IntroFrame</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4932517708642789">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6953720317137195" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Next</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="3534774812900603" type="System">
+                    <param id="0" name="Variable">IntroFrame</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="9898289151223134" type="Background">
+                    <param id="0" name="Frame number">IntroFrame</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9155877190577248">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2560294736119985" type="System">
+                    <param id="0" name="Variable">IntroFrame</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="9583052741973408" type="Next">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8222476932686577">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1817079409326694" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Next</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3310384183434078" type="System">
+                    <param id="0" name="Variable">IntroFrame</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="9033291561057524" type="System">
+                    <param id="0" name="Layout">Game</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7323216654189887">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6612751603008631" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="8778796313172164" type="System">
+                    <param id="0" name="Variable">IntroFrame</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="3231934311040614" type="Background">
+                    <param id="0" name="Frame number">IntroFrame</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3225898504048423">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="669125591059395" type="System">
+                    <param id="0" name="Variable">IntroFrame</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="7912744547909188" type="Next">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3187007647648506">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6122372304044503" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Back</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5380931043002416" type="System">
+                    <param id="0" name="Variable">IntroFrame</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="149458954291171" type="System">
+                    <param id="0" name="Layout">StartScreen</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
