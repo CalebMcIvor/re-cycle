@@ -16,8 +16,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="7">EndScreen</layout>
         <layout order="9">Credits</layout>
         <event-sheet order="2">Event sheet 1</event-sheet>
-        <event-sheet active="1" order="4">Event sheet 2</event-sheet>
-        <event-sheet order="6">Event sheet 3</event-sheet>
+        <event-sheet order="4">Event sheet 2</event-sheet>
+        <event-sheet active="1" order="6">Event sheet 3</event-sheet>
         <event-sheet order="8">Event sheet 4</event-sheet>
     </open-tabs>
     <properties>
