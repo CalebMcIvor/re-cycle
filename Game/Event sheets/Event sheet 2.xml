@@ -683,7 +683,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="291030451430894" type="System">
                             <param id="0" name="Variable">RemainderOfPoints</param>
-                            <param id="1" name="Value">Points%10</param>
+                            <param id="1" name="Value">(Points+1)%10</param>
                         </action>
                         <action id="-9" name="Set value" sid="489282268966587" type="System">
                             <param id="0" name="Variable">AddedLevel</param>
@@ -713,7 +713,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="316376551219894" type="System">
                             <param id="0" name="Variable">RemainderOfPoints</param>
-                            <param id="1" name="Value">Points%10</param>
+                            <param id="1" name="Value">(Points+1)%10</param>
                         </action>
                         <action id="-9" name="Set value" sid="697733956213845" type="System">
                             <param id="0" name="Variable">AddedLevel</param>
