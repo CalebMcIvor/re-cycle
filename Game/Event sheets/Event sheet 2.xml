@@ -3,8 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
     <events>
+<<<<<<< HEAD
         <variable constant="0" name="AddedLevel" sid="487823970444512" static="0" type="number">0</variable>
         <variable constant="0" name="RemainderOfPoints" sid="171939627103957" static="0" type="number">0</variable>
+=======
+>>>>>>> origin/master
         <variable constant="0" name="ItemThreeProbability" sid="8952333892280808" static="0" type="number">60</variable>
         <variable constant="0" name="ItemOneProbability" sid="2813902952483953" static="0" type="number">50</variable>
         <variable comment="Random Number for chossing item to spawn" constant="0" name="RanItem" sid="8142809073709886" static="0" type="number">0</variable>
@@ -183,10 +186,17 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="3338759688368437" type="GrassLeft">
+<<<<<<< HEAD
                             <param id="0" name="Y">GrassLeft.Y+(dt*(ScrollSpeed+100))</param>
                         </action>
                         <action id="-2" name="Set Y" sid="8746695630239541" type="GrassRight">
                             <param id="0" name="Y">GrassRight.Y+(dt*(ScrollSpeed+100))</param>
+=======
+                            <param id="0" name="Y">GrassLeft.Y+(dt*(ScrollSpeed+300))</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="8746695630239541" type="GrassRight">
+                            <param id="0" name="Y">GrassRight.Y+(dt*(ScrollSpeed+300))</param>
+>>>>>>> origin/master
                         </action>
                         <action id="-2" name="Set Y" sid="4087554764710221" type="Can">
                             <param id="0" name="Y">Can.Y+(dt*ScrollSpeed)</param>
@@ -201,9 +211,12 @@
                             <param id="0" name="Object">Player</param>
                             <param id="1" name="Image point (optional)">1</param>
                         </action>
+<<<<<<< HEAD
                         <action id="-2" name="Set Y" sid="816585772635271" type="Particles2">
                             <param id="0" name="Y">Particles2.Y+(dt*ScrollSpeed)</param>
                         </action>
+=======
+>>>>>>> origin/master
                     </actions>
                 </event-block>
                 <event-block sid="5913920204108222">
@@ -681,6 +694,7 @@
                         <action id="0" name="Set text" sid="1458178968484712" type="PointsDisplay">
                             <param id="0" name="Text">Points</param>
                         </action>
+<<<<<<< HEAD
                         <action id="-9" name="Set value" sid="291030451430894" type="System">
                             <param id="0" name="Variable">RemainderOfPoints</param>
                             <param id="1" name="Value">(Points+1)%10</param>
@@ -689,6 +703,8 @@
                             <param id="0" name="Variable">AddedLevel</param>
                             <param id="1" name="Value">0</param>
                         </action>
+=======
+>>>>>>> origin/master
                     </actions>
                 </event-block>
                 <event-block sid="8474342897038821">
@@ -711,6 +727,7 @@
                         <action id="0" name="Set text" sid="6701262554952797" type="PointsDisplay">
                             <param id="0" name="Text">Points</param>
                         </action>
+<<<<<<< HEAD
                         <action id="-9" name="Set value" sid="316376551219894" type="System">
                             <param id="0" name="Variable">RemainderOfPoints</param>
                             <param id="1" name="Value">(Points+1)%10</param>
@@ -719,6 +736,8 @@
                             <param id="0" name="Variable">AddedLevel</param>
                             <param id="1" name="Value">0</param>
                         </action>
+=======
+>>>>>>> origin/master
                     </actions>
                 </event-block>
                 <event-block sid="7913822635717232">
@@ -736,6 +755,7 @@
                 </event-block>
             </sub-events>
         </event-group>
+<<<<<<< HEAD
         <event-group description="" sid="778144546818318" title="Levels" />
         <event-block sid="257626360065966">
             <conditions>
@@ -773,5 +793,7 @@
                 </action>
             </actions>
         </event-block>
+=======
+>>>>>>> origin/master
     </events>
 </c2eventsheet>

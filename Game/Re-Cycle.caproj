@@ -312,12 +312,15 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
+<<<<<<< HEAD
         <object-type name="Text" sid="307619162596436">
             <plugin id="Text" />
         </object-type>
         <object-type name="LevelNumber" sid="321396657792060">
             <plugin id="Text" />
         </object-type>
+=======
+>>>>>>> origin/master
     </object-folder>
     <families />
     <layout-folder>
@@ -325,14 +328,20 @@
         <layout>Game.xml</layout>
         <layout>Instructions.xml</layout>
         <layout>EndScreen.xml</layout>
+<<<<<<< HEAD
         <layout>Credits.xml</layout>
+=======
+>>>>>>> origin/master
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
         <event-sheet>Event sheet 3.xml</event-sheet>
         <event-sheet>Event sheet 4.xml</event-sheet>
+<<<<<<< HEAD
         <event-sheet>Event sheet 5.xml</event-sheet>
+=======
+>>>>>>> origin/master
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="3" />
