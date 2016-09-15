@@ -84,6 +84,9 @@
                         <action id="5" name="Set frame" sid="2997890631952963" type="PauseButton">
                             <param id="0" name="Frame number">1</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="922582661812639" type="Particles">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                         <action id="-16" name="Wait" sid="4716752199000519" type="System">
                             <param id="0" name="Seconds">0.5</param>
                         </action>
@@ -123,6 +126,9 @@
                         </action>
                         <action id="-16" name="Wait" sid="9003572622105752" type="System">
                             <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="293618152462544" type="Particles">
+                            <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="5882813248008809" type="System">
                             <param id="0" name="Variable">Paused</param>
@@ -732,6 +738,10 @@
                             <param id="0" name="Variable">AddedLevel</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="591206899518639" type="System">
+                            <param id="0" name="Variable">INITIALSCROLLSPEED</param>
+                            <param id="1" name="Value">ScrollSpeed</param>
+                        </action>
                         <action id="-9" name="Set value" sid="760741311770170" type="System">
                             <param id="0" name="Variable">ScrollSpeed</param>
                             <param id="1" name="Value">ScrollSpeed/2</param>
@@ -745,11 +755,11 @@
                         </action>
                         <action id="-9" name="Set value" sid="273879148693511" type="System">
                             <param id="0" name="Variable">ScrollSpeed</param>
-                            <param id="1" name="Value">ScrollSpeed*2</param>
+                            <param id="1" name="Value">INITIALSCROLLSPEED</param>
                         </action>
                         <action id="-9" name="Set value" sid="368187311360435" type="System">
                             <param id="0" name="Variable">ScrollSpeed</param>
-                            <param id="1" name="Value">GrassScrollSpeed*2</param>
+                            <param id="1" name="Value">INITIALSCROLLSPEED+100</param>
                         </action>
                     </actions>
                 </event-block>
