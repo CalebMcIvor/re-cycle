@@ -183,10 +183,10 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Set Y" sid="3338759688368437" type="GrassLeft">
-                            <param id="0" name="Y">GrassLeft.Y+(dt*ScrollSpeed)</param>
+                            <param id="0" name="Y">GrassLeft.Y+(dt*(ScrollSpeed+100))</param>
                         </action>
                         <action id="-2" name="Set Y" sid="8746695630239541" type="GrassRight">
-                            <param id="0" name="Y">GrassRight.Y+(dt*ScrollSpeed)</param>
+                            <param id="0" name="Y">GrassRight.Y+(dt*(ScrollSpeed+100))</param>
                         </action>
                         <action id="-2" name="Set Y" sid="4087554764710221" type="Can">
                             <param id="0" name="Y">Can.Y+(dt*ScrollSpeed)</param>
@@ -766,6 +766,10 @@
                 <action id="-9" name="Set value" sid="203462672760108" type="System">
                     <param id="0" name="Variable">AddedLevel</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="806174168925095" type="System">
+                    <param id="0" name="Variable">ScrollSpeed</param>
+                    <param id="1" name="Value">ScrollSpeed+100</param>
                 </action>
             </actions>
         </event-block>
