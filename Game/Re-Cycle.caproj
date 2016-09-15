@@ -312,6 +312,12 @@
             <plugin id="Particles" />
             <texture />
         </object-type>
+        <object-type name="Text" sid="307619162596436">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelNumber" sid="321396657792060">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
     <events>
+        <variable constant="0" name="AddedLevel" sid="487823970444512" static="0" type="number">0</variable>
+        <variable constant="0" name="RemainderOfPoints" sid="171939627103957" static="0" type="number">0</variable>
         <variable constant="0" name="ItemThreeProbability" sid="8952333892280808" static="0" type="number">60</variable>
         <variable constant="0" name="ItemOneProbability" sid="2813902952483953" static="0" type="number">50</variable>
         <variable comment="Random Number for chossing item to spawn" constant="0" name="RanItem" sid="8142809073709886" static="0" type="number">0</variable>
@@ -679,6 +681,14 @@
                         <action id="0" name="Set text" sid="1458178968484712" type="PointsDisplay">
                             <param id="0" name="Text">Points</param>
                         </action>
+                        <action id="-9" name="Set value" sid="291030451430894" type="System">
+                            <param id="0" name="Variable">RemainderOfPoints</param>
+                            <param id="1" name="Value">Points%10</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="489282268966587" type="System">
+                            <param id="0" name="Variable">AddedLevel</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8474342897038821">
@@ -701,6 +711,14 @@
                         <action id="0" name="Set text" sid="6701262554952797" type="PointsDisplay">
                             <param id="0" name="Text">Points</param>
                         </action>
+                        <action id="-9" name="Set value" sid="316376551219894" type="System">
+                            <param id="0" name="Variable">RemainderOfPoints</param>
+                            <param id="1" name="Value">Points%10</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="697733956213845" type="System">
+                            <param id="0" name="Variable">AddedLevel</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7913822635717232">
@@ -718,5 +736,38 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="778144546818318" title="Levels" />
+        <event-block sid="257626360065966">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="656552663393581" type="System">
+                    <param id="0" name="Variable">RemainderOfPoints</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="303315811963358" type="System">
+                    <param id="0" name="Variable">AddedLevel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="931564757281298" type="System">
+                    <param id="0" name="Variable">Points</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="598670619267801" type="System">
+                    <param id="0" name="Variable">Dificulty</param>
+                    <param id="1" name="Value">Dificulty+1</param>
+                </action>
+                <action id="0" name="Set text" sid="153965811473825" type="LevelNumber">
+                    <param id="0" name="Text">Dificulty</param>
+                </action>
+                <action id="-9" name="Set value" sid="203462672760108" type="System">
+                    <param id="0" name="Variable">AddedLevel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
