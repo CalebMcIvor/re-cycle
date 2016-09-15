@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Re-Cycle</name>
+    <description>Endless Runner </description>
+    <version>1.0.0.0</version>
+    <author>Caleb McIvor</author>
+    <author-email>awesome.recycle.game@gmail.com</author-email>
+    <author-website>http://recycle.epsilum.co.nz</author-website>
+    <app-id>nz.co.epsilum.recycle</app-id>
+    <unique-id>2f4vd1kwu76ge</unique-id>
+    <saved-with-version>23300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="darken">Darken</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1080</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>StartScreen</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="intro" sid="6135621329071116">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4405776246667493" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\intro.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Play" sid="4657125621526746">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6696611816060543" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\go-button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Instructions" sid="3671665133857915">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7556824870729999" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\instruction-button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="7256636230976725">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Background" sid="7196183710456576">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="699445449133041" speed="0">
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\why_recycle.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\introduction.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\instructions.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Next" sid="218004642929984">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1692755616482129" speed="0">
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\next-button.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\play.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Back" sid="3259519019298587">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6134890497693705" speed="5">
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\back-button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Road" sid="5566626600229211">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2363496684537205" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="2781942450993292">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="736908045396009">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="1068827550395836">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8589567665671588" speed="5">
+                    <frame duration="1" hotspotX="0.494118" hotspotY="0.589381" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\top-down-bike-racing-monsterbraingames.png">
+                        <image-point name="partSpawn" x="0.494118" y="0.976991" />
+                        <collision-poly>
+                            <point x="0.223529" y="0.125664" />
+                            <point x="0.5" y="0" />
+                            <point x="0.74902" y="0.109734" />
+                            <point x="0.972549" y="0.528318" />
+                            <point x="0.705882" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.301961" y="1" />
+                            <point x="0" y="0.530088" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PauseButton" sid="3321861757747888">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2073831424852938" speed="0">
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\pause-button.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\play-button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SoundButton" sid="1464216779138132">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878065039554883" speed="0">
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\sound-button.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\nosound-button.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GrassRight" sid="9774973510025667">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="416499082788785">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\grass.png" />
+        </object-type>
+        <object-type name="GrassLeft" sid="6133246016827396">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="322898804428245">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\grass.png" />
+        </object-type>
+        <object-type name="EnergyBar" sid="7250568336371072">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="1465772528929741">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9861039246844467" speed="5">
+                    <frame duration="1" hotspotX="0.591415" hotspotY="0.801843" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\energy bar.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Can" sid="4150749783849925">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="2671227801527768">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1364162601907474" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\tin can.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Plant" sid="9036110141370932">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="3179068444779713">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7145805650955503" speed="5">
+                    <frame duration="1" hotspotX="0.482222" hotspotY="0.981624" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\Strawberry-Plant.png">
+                        <collision-poly>
+                            <point x="0.260741" y="0.123296" />
+                            <point x="0.553334" y="0.06639" />
+                            <point x="0.863703" y="0.0094843" />
+                            <point x="0.958518" y="0.424126" />
+                            <point x="0.816296" y="0.815056" />
+                            <point x="0.464444" y="0.810314" />
+                            <point x="0.361481" y="0.60166" />
+                            <point x="0.0355556" y="0.647007" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpawnerOne" sid="8740341370952635">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9168236494508096" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpawnerTwo" sid="9239746362039828">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5294798417018204" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpawnerThree" sid="3660476781820749">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5511698866167404" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpawnerFour" sid="238115544647731">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1663145158453237" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_over" sid="8099867340794174">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7346742959141393" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\My Projects\Re-Cycle\Resources\Compiled Images\game_over.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PointsDisplay" sid="539032122611565">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Points" sid="9632291148402183">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="YourScore" sid="5655122016913168">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="FinalScore" sid="8167698084599167">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MainMenu" sid="9070443012144357">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Credits" sid="970450705653034">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Particles" sid="451931359644336">
+            <plugin id="Particles" />
+            <effects>
+                <effect-type name="Darken">
+                    <effect id="darken" />
+                </effect-type>
+            </effects>
+            <texture />
+        </object-type>
+        <object-type name="Particles2" sid="936613852923820">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="firework" sid="106673201796001">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309504556726937" speed="5">
+                    <frame duration="1" hotspotX="0.876106" hotspotY="0.015625" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles3" sid="251376415477774">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>StartScreen.xml</layout>
+        <layout>Game.xml</layout>
+        <layout>Instructions.xml</layout>
+        <layout>EndScreen.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="3" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
